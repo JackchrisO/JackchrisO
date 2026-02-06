@@ -1,46 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Releases • Portfólio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Releases • JackchrisO</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
+  <nav>
     <div class="container">
-      <div class="brand">
-        <img src="assets/logo.png" alt="Logo">
-        <h1>JackchrisO</h1>
-      </div>
-      <nav>
+      <div class="brand">JackchrisO</div>
+      <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="projects.html">Apps</a>
+        <a href="about.html">Sobre</a>
+        <a href="projects.html">Projetos</a>
         <a href="tech.html">Tecnologias</a>
         <a href="releases.html">Releases</a>
-        <a href="about.html">Sobre</a>
         <a href="contact.html">Contato</a>
-      </nav>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <main>
-    <section class="container">
-      <h2>Releases</h2>
-
-      <div class="card">
-        <h3>Synapse • v0.1</h3>
-        <p>Primeira versão de teste.</p>
-        <a class="btn" href="https://github.com/JackchrisO/nao-deixe-o-sistema-nervoso/actions/runs/21755950139/artifacts/5408058151" target="_blank">Download APK</a>
+  <main class="container">
+    <section class="section">
+      <div class="section-title">
+        <h2>Releases</h2>
+        <span>APK e versões</span>
       </div>
 
+      <div class="card">
+        <h3>Disponível para testes</h3>
+        <p>
+          Aqui você pode listar seus APKs ou versões.  
+          Exemplo: “Synapse v0.1 – APK disponível via GitHub Actions”.
+        </p>
+      </div>
+
+      <div class="grid" style="margin-top: 16px;">
+        <div class="card-compact">
+          <h4>v0.1</h4>
+          <p>Versão inicial com telas básicas, login e navegação.</p>
+        </div>
+        <div class="card-compact">
+          <h4>v0.2</h4>
+          <p>Implementação de câmera, JSON e integração com API.</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">
-      <p>© 2026 Jackeline Christina Oliveira • Todos os direitos reservados</p>
-    </div>
+    © 2026 • Jackeline Christina Oliveira • Portfólio
   </footer>
 </body>
 </html>
