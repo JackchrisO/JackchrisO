@@ -1,86 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apps • Portfólio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos • JackchrisO</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
+  <nav>
     <div class="container">
-      <div class="brand">
-        <img src="assets/logo.png" alt="Logo">
-        <h1>JackchrisO</h1>
-      </div>
-      <nav>
+      <div class="brand">JackchrisO</div>
+      <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="projects.html">Apps</a>
+        <a href="about.html">Sobre</a>
+        <a href="projects.html">Projetos</a>
         <a href="tech.html">Tecnologias</a>
         <a href="releases.html">Releases</a>
-        <a href="about.html">Sobre</a>
         <a href="contact.html">Contato</a>
-      </nav>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <main>
-    <section class="container">
-      <h2>📱 Apps</h2>
-
-      <div class="search">
-        <input id="searchInput" type="text" placeholder="Pesquisar apps...">
+  <main class="container">
+    <section class="section">
+      <div class="section-title">
+        <h2>Projetos</h2>
+        <span>Apps e demonstrações</span>
       </div>
 
-      <div id="projectGrid" class="grid"></div>
+      <div class="grid">
+        <div class="card-compact">
+          <h4>Synapse (App Android)</h4>
+          <p>App Android desenvolvido com Kivy. Inclui telas, câmera, JSON, API e automação de build.</p>
+        </div>
+        <div class="card-compact">
+          <h4>App Exemplo (Kivy)</h4>
+          <p>Template de navegação com múltiplas telas e funcionalidades básicas para demonstração.</p>
+        </div>
+        <div class="card-compact">
+          <h4>Automação de Build</h4>
+          <p>Pipeline GitHub Actions para gerar APK automaticamente com Buildozer.</p>
+        </div>
+        <div class="card-compact">
+          <h4>Projetos futuros</h4>
+          <p>Apps com análise de dados, dashboards e integração com APIs externas.</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">
-      <p>© 2026 Jackeline Christina Oliveira • Todos os direitos reservados</p>
-    </div>
+    © 2026 • Jackeline Christina Oliveira • Portfólio
   </footer>
-
-  <script>
-    const projects = [
-      {
-        name: "Synapse",
-        desc: "App de teste com várias páginas e funcionalidades.",
-        status: "Em teste",
-        apk: "https://github.com/JackchrisO/nao-deixe-o-sistema-nervoso/actions/runs/21755950139/artifacts/5408058151",
-        repo: "https://github.com/JackchrisO/nao-deixe-o-sistema-nervoso"
-      }
-    ];
-
-    const grid = document.getElementById("projectGrid");
-    const search = document.getElementById("searchInput");
-
-    function renderProjects(list) {
-      grid.innerHTML = "";
-      list.forEach(p => {
-        const card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
-          <h3>${p.name}</h3>
-          <p>${p.desc}</p>
-          <p><b>Status:</b> ${p.status}</p>
-          <div class="card-buttons">
-            <a class="btn" href="${p.apk}" target="_blank">Download APK</a>
-            <a class="btn btn-outline" href="${p.repo}" target="_blank">Ver no GitHub</a>
-          </div>
-        `;
-        grid.appendChild(card);
-      });
-    }
-
-    search.addEventListener("input", () => {
-      const q = search.value.toLowerCase();
-      const filtered = projects.filter(p => p.name.toLowerCase().includes(q) || p.desc.toLowerCase().includes(q));
-      renderProjects(filtered);
-    });
-
-    renderProjects(projects);
-  </script>
 </body>
 </html>
