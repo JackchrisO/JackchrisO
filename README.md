@@ -1,3 +1,7 @@
+# JackchrisO
+
+**Desenvolvedora Python & Kivy • Estudante de Engenharia de Software • Belo Horizonte, MG**
+
 ## Hi there 👋
 
 <!--
