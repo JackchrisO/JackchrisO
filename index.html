@@ -1,73 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jackeline Christina • Portfólio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jackeline Christina Oliveira • Portfólio</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
+  <nav>
     <div class="container">
-      <div class="brand">
-        <img src="assets/logo.png" alt="Logo">
-        <h1>JackchrisO</h1>
-      </div>
-      <nav>
+      <div class="brand">JackchrisO</div>
+      <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="projects.html">Apps</a>
+        <a href="about.html">Sobre</a>
+        <a href="projects.html">Projetos</a>
         <a href="tech.html">Tecnologias</a>
         <a href="releases.html">Releases</a>
-        <a href="about.html">Sobre</a>
         <a href="contact.html">Contato</a>
-      </nav>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <main>
+  <main class="container">
     <section class="hero">
-      <div class="container">
-        <div class="hero-left">
-          <h2>Jackeline Christina Oliveira</h2>
-          <p>Desenvolvedora Python & Kivy • 32 anos • Belo Horizonte, MG</p>
-          <p>Crio apps Android com Python usando Kivy, Buildozer e GitHub Actions.</p>
-          <div class="buttons">
-            <a class="btn" href="projects.html">Ver Apps</a>
-            <a class="btn btn-outline" href="releases.html">Downloads</a>
+      <div class="hero-grid">
+        <div>
+          <h1>Jackeline Christina Oliveira</h1>
+          <p>
+            Desenvolvedora Python especializada em aplicações Android com Kivy.
+            Produzo apps com integração a APIs, persistência local, autenticação,
+            análise de dados e automação de build com GitHub Actions.
+          </p>
+          <div class="badges">
+            <span class="badge">Python</span>
+            <span class="badge">Kivy</span>
+            <span class="badge">Buildozer</span>
+            <span class="badge">GitHub Actions</span>
+            <span class="badge">Android</span>
+            <span class="badge">APIs</span>
           </div>
         </div>
-        <div class="hero-right">
-          <img src="assets/avatar.png" alt="Avatar">
+
+        <div class="card">
+          <h3>Resumo</h3>
+          <p>
+            <strong>Local:</strong> Belo Horizonte, MG<br>
+            <strong>Idade:</strong> 32 anos<br>
+            <strong>Contato:</strong> (31) 97118-5744 • jackchris2705@gmail.com
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="highlights">
-      <div class="container">
-        <h3>📌 Destaques</h3>
-        <div class="grid">
-          <div class="card">
-            <h4>Apps Android</h4>
-            <p>Desenvolvo apps com Kivy + Python + Buildozer.</p>
-          </div>
-          <div class="card">
-            <h4>CI/CD</h4>
-            <p>Build automático no GitHub Actions com APK pronto.</p>
-          </div>
-          <div class="card">
-            <h4>Dados & APIs</h4>
-            <p>Uso SQLite, JSON e APIs com internet.</p>
-          </div>
+    <section class="section">
+      <div class="section-title">
+        <h2>Visão geral</h2>
+        <span>Portfólio de apps Android</span>
+      </div>
+
+      <div class="grid">
+        <div class="card-compact">
+          <h4>Apps Android</h4>
+          <p>Aplicações desenvolvidas com Python, Kivy e Buildozer, com deploy via GitHub Actions.</p>
+        </div>
+        <div class="card-compact">
+          <h4>Integrações</h4>
+          <p>API REST, autenticação, armazenamento local (JSON/SQLite), e consumo de serviços externos.</p>
+        </div>
+        <div class="card-compact">
+          <h4>Dados e análise</h4>
+          <p>Tratamento de dados, gráficos simples e geração de relatórios.</p>
+        </div>
+        <div class="card-compact">
+          <h4>Automação</h4>
+          <p>Pipeline de build com GitHub Actions para gerar APK automaticamente.</p>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">
-      <p>© 2026 Jackeline Christina Oliveira • Todos os direitos reservados</p>
-    </div>
+    © 2026 • Jackeline Christina Oliveira • Portfólio
   </footer>
-
 </body>
 </html>
